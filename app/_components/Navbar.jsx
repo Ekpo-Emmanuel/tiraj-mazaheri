@@ -26,7 +26,8 @@ export default function Navbar() {
             <div className="flex h-16 items-center justify-between">
             <div className="md:flex md:items-center md:gap-12">
                 <Link href="/">
-                    <h1 className={`text-md sm:text-2xl uppercase font-semibold text-gray-900 ${playfair.className}`}>
+                    {/* <h1 className={`text-md sm:text-2xl uppercase text-gray-900`}> */}
+                    <h1 className={`text-md sm:text-2xl uppercase text-gray-900 ${playfair.className}`}>
                         Tirajeh Mazaheri
                     </h1>
                 </Link>
@@ -48,11 +49,23 @@ export default function Navbar() {
                 </nav>
             </div>
             <div className="flex items-center gap-4">
-                <div className="sm:flex sm:gap-4">
-                    <Link href="#">
-                        <Button variant="creamDark" className={playfair.className} size="darkSm">contact us</Button>
+                <div className="flex flex-col items-center justify-center gap-2 mx-auto md:flex-row">
+                    {/* <Link href="#"
+                        className="
+                        inline-flex text-cream text-sm sm:text-base items-center justify-center w-full h-10 gap-3 px-5 py-3 font-medium  duration-200 bg-gray-900 md:w-auto rounded-full hover:bg-gray-700 focus:ring-2 focus:ring-offset-2 focus:ring-black"
+                        aria-label="Primary action"
+                    >
+                        Contact Us
+                    </Link> */}
+                     <Link href="#"
+                        className="
+                        inline-flex text-black border border-black text-sm sm:text-base items-center justify-center w-full sm:h-10 gap-3 px-3 sm:px-6 py-[4px] sm:py-3 font-medium  duration-200 bg-cream md:w-auto rounded-md hover:bg-[#1e1e1e] hover:text-white focus:ring-2 focus:ring-offset-2 focus:ring-black"
+                        aria-label="Primary action"
+                    >
+                        Contact Us
                     </Link>
                 </div>
+
                 <div className="block sm:hidden">
                     <Menu />
                 </div>
